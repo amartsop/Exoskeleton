@@ -1,0 +1,59 @@
+X1: {
+    Green: A0
+    Red: A1
+}
+
+X2: {
+    Green: A2
+    Red: A3
+}
+
+X3: {
+    Green: A4
+    Red: A5
+}
+
+X4: {
+    Green: A6
+    Red: A7
+}
+
+X5: {
+    Green: readAdc(0, 4)
+    Red: readAdc(1, 4)
+}
+
+X6: {
+    Green: readAdc(2, 4)
+    Red: readAdc(3, 4)
+}
+
+X7: {
+    Green: readAdc(4, 4)
+    Red: readAdc(5, 4)
+}
+
+X8: {
+    Green: readAdc(6, 4) (Not Working)
+    Red: readAdc(7, 4)
+}
+
+X9: {
+    Green: readAdc(0, 2)
+    Red: readAdc(1, 2)
+}
+
+X10: {
+    Green: readAdc(2, 2)
+    Red: readAdc(3, 2)
+}
+
+X11: {
+    Green: readAdc(4, 2)
+    Red: readAdc(5, 2)
+}
+
+X12: {
+    Green: readAdc(6, 2)
+    Red: readAdc(7, 2)
+}

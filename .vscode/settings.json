@@ -1,0 +1,13 @@
+{
+    "arduino.path": "/opt/arduino-1.8.16",
+    "arduino.additionalUrls": "",
+    "arduino.logLevel": "info",
+    "arduino.enableUSBDetection": true,
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "files.associations": {
+        "cstddef": "cpp",
+        "*.tcc": "cpp",
+        "iterator": "cpp",
+        "*.ipp": "cpp"
+    }
+}
