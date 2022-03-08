@@ -1,4 +1,4 @@
 <map id="ExoHandler::print_angle_value" name="ExoHandler::print_angle_value">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node1" title="Print angle sensor value." alt="" coords="5,5,184,47"/>
 <area shape="rect" id="node2" href="$classSensor.html#a8e3b003dde3f95d46c009ced939414d4" title="Returns the angle value of the sensor in degrees." alt="" coords="232,13,413,39"/>
 </map>

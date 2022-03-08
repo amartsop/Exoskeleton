@@ -5,7 +5,8 @@
 /// Class AnalogPort
 /** This class defines the the ports that are placed on the custom PCB. Each
 port has one unique ID (X1, ... X12), a type (0: Direct communication to the 
-chip, 1: Indirect comminication (through the ADC).
+chip, 1: Indirect comminication (through the ADC). The class also included 
+functionality for reading analog values arriving in both channels of the port.
 */
 class AnalogPort
 {
@@ -27,12 +28,11 @@ public:
         int red_port_value;
     };
 
-    /* Initialize analog port. port_id is the unique id of the port.
-    The port_type defines if there is a direct or
-    inderect communication with the chip (0: Direct communication to
-    the chip, 1: Indirect comminication (through the ADC). Port numbers for
-    green and red port define the analog pin, while adc_chip_select is the 
-    selection pin for the ADC circuit */
+    // The port_type defines if there is a direct or
+    // inderect communication with the chip (0: Direct communication to
+    // the chip, 1: Indirect comminication (through the ADC). Port numbers for
+    // green and red port define the analog pin, while adc_chip_select is the 
+    // selection pin for the ADC circuit */
     /// Initialize the port object.
     void initialize(int port_id, int port_type, int green_port, int red_port, 
         int adc_chip_select = 0);

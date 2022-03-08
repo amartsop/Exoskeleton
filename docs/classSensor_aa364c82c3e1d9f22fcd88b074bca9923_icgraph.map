@@ -1,5 +1,5 @@
 <map id="Sensor::get_analog_value" name="Sensor::get_analog_value">
 <area shape="rect" id="node1" title="Returns the analog value of the sensor." alt="" coords="339,5,485,47"/>
-<area shape="rect" id="node2" href="$classExoHandler.html#aa204e6ca2651e5635e21e483e6044d36" title=" " alt="" coords="104,5,291,47"/>
+<area shape="rect" id="node2" href="$classExoHandler.html#aa204e6ca2651e5635e21e483e6044d36" title="Print analog sensor value." alt="" coords="104,5,291,47"/>
 <area shape="rect" id="node3" href="$Exoskeleton_8ino.html#afe461d27b9c48d5921c00d521181f12f" title=" " alt="" coords="5,13,56,39"/>
 </map>

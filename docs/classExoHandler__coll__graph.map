@@ -1,5 +1,5 @@
 <map id="ExoHandler" name="ExoHandler">
-<area shape="rect" id="node1" title=" " alt="" coords="208,273,305,300"/>
+<area shape="rect" id="node1" title="Class ExoHandler." alt="" coords="208,273,305,300"/>
 <area shape="rect" id="node2" href="$structExoHandler_1_1AnalogPortsContainer.html" title=" " alt="" coords="5,184,252,211"/>
 <area shape="rect" id="node3" href="$classAnalogPort.html" title="Class AnalogPort." alt="" coords="82,95,175,121"/>
 <area shape="rect" id="node4" href="$structAnalogPort_1_1AnalogPortValues.html" title=" " alt="" coords="21,5,237,32"/>

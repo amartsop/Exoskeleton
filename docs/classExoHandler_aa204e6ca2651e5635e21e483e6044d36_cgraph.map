@@ -1,4 +1,4 @@
 <map id="ExoHandler::print_analog_value" name="ExoHandler::print_analog_value">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node1" title="Print analog sensor value." alt="" coords="5,5,192,47"/>
 <area shape="rect" id="node2" href="$classSensor.html#aa364c82c3e1d9f22fcd88b074bca9923" title="Returns the analog value of the sensor." alt="" coords="240,5,387,47"/>
 </map>

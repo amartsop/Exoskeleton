@@ -132,9 +132,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class <a class="el" href="classAnalogPort.html" title="Class AnalogPort.">AnalogPort</a>. </p>
-<p >This class defines the the ports that are placed on the custom PCB. Each port has one unique ID (X1, ... X12), a type (0: Direct communication to the chip, 1: Indirect comminication (through the ADC). </p>
+<p >This class defines the the ports that are placed on the custom PCB. Each port has one unique ID (X1, ... X12), a type (0: Direct communication to the chip, 1: Indirect comminication (through the ADC). The class also included functionality for reading analog values arriving in both channels of the port. </p>
 
-<p class="definition">Definition at line <a class="el" href="AnalogPort_8h_source.html#l00010">10</a> of file <a class="el" href="AnalogPort_8h_source.html">AnalogPort.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AnalogPort_8h_source.html#l00011">11</a> of file <a class="el" href="AnalogPort_8h_source.html">AnalogPort.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5324c56e2969782ed3ffcc83584fbd83" name="a5324c56e2969782ed3ffcc83584fbd83"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5324c56e2969782ed3ffcc83584fbd83">&#9670;&nbsp;</a></span>AnalogPort()</h2>
@@ -161,8 +161,8 @@ Private Attributes</h2></td></tr>
 
 <p>Empth constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="AnalogPort_8h_source.html#l00015">15</a> of file <a class="el" href="AnalogPort_8h_source.html">AnalogPort.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   15</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="AnalogPort_8h_source.html#l00016">16</a> of file <a class="el" href="AnalogPort_8h_source.html">AnalogPort.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -203,7 +203,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classAnalogPort_acafba20e4274ed7d2f03808860ecb282_icgraph.png" border="0" usemap="#aclassAnalogPort_acafba20e4274ed7d2f03808860ecb282_icgraph" alt=""/></div>
 <map name="aclassAnalogPort_acafba20e4274ed7d2f03808860ecb282_icgraph" id="aclassAnalogPort_acafba20e4274ed7d2f03808860ecb282_icgraph">
 <area shape="rect" title="Get the port values reaching the port." alt="" coords="303,5,457,47"/>
-<area shape="rect" href="classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title=" " alt="" coords="104,5,255,47"/>
+<area shape="rect" href="classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title="Update measurements." alt="" coords="104,5,255,47"/>
 <area shape="rect" href="Exoskeleton_8ino.html#afe461d27b9c48d5921c00d521181f12f" title=" " alt="" coords="5,13,56,39"/>
 </map>
 </div>
@@ -255,7 +255,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Initialize the port object. </p>
-<p >This function initializes the sensor based on the configuration made by <a class="el" href="classExoHandler.html#a20610c22a179089a78f204ce4911ad47">ExoHandler::initialize_analog_ports</a>. It stores a local copy o all the port's properties to it's local member variables.</p>
+<p >This function initializes the analog ports based on the configuration made by <a class="el" href="classExoHandler.html#a20610c22a179089a78f204ce4911ad47" title="Initialize analog ports.">ExoHandler::initialize_analog_ports</a>. It stores a local copy o all the port's properties to it's local member variables.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port_id</td><td>The unique ID of the port (1-12) </td></tr>
@@ -290,8 +290,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classAnalogPort_ab4a8af2c0d020c6bb2a4b635e712c7a7_icgraph.png" border="0" usemap="#aclassAnalogPort_ab4a8af2c0d020c6bb2a4b635e712c7a7_icgraph" alt=""/></div>
 <map name="aclassAnalogPort_ab4a8af2c0d020c6bb2a4b635e712c7a7_icgraph" id="aclassAnalogPort_ab4a8af2c0d020c6bb2a4b635e712c7a7_icgraph">
 <area shape="rect" title="Initialize the port object." alt="" coords="531,13,688,39"/>
-<area shape="rect" href="classExoHandler.html#a20610c22a179089a78f204ce4911ad47" title=" " alt="" coords="321,5,483,47"/>
-<area shape="rect" href="classExoHandler.html#a327b099600f2e8f1c322496c1b809db0" title=" " alt="" coords="112,13,273,39"/>
+<area shape="rect" href="classExoHandler.html#a20610c22a179089a78f204ce4911ad47" title="Initialize analog ports." alt="" coords="321,5,483,47"/>
+<area shape="rect" href="classExoHandler.html#a327b099600f2e8f1c322496c1b809db0" title="Initialize exoskeleton handler." alt="" coords="112,13,273,39"/>
 <area shape="rect" href="Exoskeleton_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title=" " alt="" coords="5,13,64,39"/>
 </map>
 </div>
@@ -406,7 +406,7 @@ Here is the caller graph for this function:</div>
 <map name="aclassAnalogPort_ab1ceb753094a906b89f1b263f2ed819e_icgraph" id="aclassAnalogPort_ab1ceb753094a906b89f1b263f2ed819e_icgraph">
 <area shape="rect" title="Read the ADC signal." alt="" coords="497,13,656,39"/>
 <area shape="rect" href="classAnalogPort.html#a17fd58bad8bd2dc47e1ab5fb02845b5f" title="Read port values." alt="" coords="303,5,449,47"/>
-<area shape="rect" href="classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title=" " alt="" coords="104,5,255,47"/>
+<area shape="rect" href="classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title="Update measurements." alt="" coords="104,5,255,47"/>
 <area shape="rect" href="Exoskeleton_8ino.html#afe461d27b9c48d5921c00d521181f12f" title=" " alt="" coords="5,13,56,39"/>
 </map>
 </div>
@@ -456,8 +456,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span>}</div>
 <div class="ttc" id="aclassAnalogPort_html_ab1ceb753094a906b89f1b263f2ed819e"><div class="ttname"><a href="classAnalogPort.html#ab1ceb753094a906b89f1b263f2ed819e">AnalogPort::readADC</a></div><div class="ttdeci">static int readADC(int channel, int adcChipSelectPin)</div><div class="ttdoc">Read the ADC signal.</div><div class="ttdef"><b>Definition:</b> <a href="AnalogPort_8cpp_source.html#l00066">AnalogPort.cpp:66</a></div></div>
-<div class="ttc" id="astructAnalogPort_1_1AnalogPortValues_html_a206f171410521209e6b4715f61a2413f"><div class="ttname"><a href="structAnalogPort_1_1AnalogPortValues.html#a206f171410521209e6b4715f61a2413f">AnalogPort::AnalogPortValues::green_port_value</a></div><div class="ttdeci">int green_port_value</div><div class="ttdoc">Analog value for green port.</div><div class="ttdef"><b>Definition:</b> <a href="AnalogPort_8h_source.html#l00024">AnalogPort.h:24</a></div></div>
-<div class="ttc" id="astructAnalogPort_1_1AnalogPortValues_html_a77a985ce09951ab4583cf9558412448f"><div class="ttname"><a href="structAnalogPort_1_1AnalogPortValues.html#a77a985ce09951ab4583cf9558412448f">AnalogPort::AnalogPortValues::red_port_value</a></div><div class="ttdeci">int red_port_value</div><div class="ttdoc">Analog value for red port.</div><div class="ttdef"><b>Definition:</b> <a href="AnalogPort_8h_source.html#l00027">AnalogPort.h:27</a></div></div>
+<div class="ttc" id="astructAnalogPort_1_1AnalogPortValues_html_a206f171410521209e6b4715f61a2413f"><div class="ttname"><a href="structAnalogPort_1_1AnalogPortValues.html#a206f171410521209e6b4715f61a2413f">AnalogPort::AnalogPortValues::green_port_value</a></div><div class="ttdeci">int green_port_value</div><div class="ttdoc">Analog value for green port.</div><div class="ttdef"><b>Definition:</b> <a href="AnalogPort_8h_source.html#l00025">AnalogPort.h:25</a></div></div>
+<div class="ttc" id="astructAnalogPort_1_1AnalogPortValues_html_a77a985ce09951ab4583cf9558412448f"><div class="ttname"><a href="structAnalogPort_1_1AnalogPortValues.html#a77a985ce09951ab4583cf9558412448f">AnalogPort::AnalogPortValues::red_port_value</a></div><div class="ttdeci">int red_port_value</div><div class="ttdoc">Analog value for red port.</div><div class="ttdef"><b>Definition:</b> <a href="AnalogPort_8h_source.html#l00028">AnalogPort.h:28</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -473,7 +473,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classAnalogPort_a17fd58bad8bd2dc47e1ab5fb02845b5f_icgraph.png" border="0" usemap="#aclassAnalogPort_a17fd58bad8bd2dc47e1ab5fb02845b5f_icgraph" alt=""/></div>
 <map name="aclassAnalogPort_a17fd58bad8bd2dc47e1ab5fb02845b5f_icgraph" id="aclassAnalogPort_a17fd58bad8bd2dc47e1ab5fb02845b5f_icgraph">
 <area shape="rect" title="Read port values." alt="" coords="303,5,449,47"/>
-<area shape="rect" href="classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title=" " alt="" coords="104,5,255,47"/>
+<area shape="rect" href="classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title="Update measurements." alt="" coords="104,5,255,47"/>
 <area shape="rect" href="Exoskeleton_8ino.html#afe461d27b9c48d5921c00d521181f12f" title=" " alt="" coords="5,13,56,39"/>
 </map>
 </div>

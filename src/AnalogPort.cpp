@@ -2,8 +2,8 @@
 
 // Initialize analog port
 /**
- * @brief This function initializes the sensor based on the configuration made
- * by ExoHandler::initialize_analog_ports. It stores a local copy o
+ * @brief This function initializes the analog ports based on the configuration
+ * made by ExoHandler::initialize_analog_ports. It stores a local copy o
  *  all the port's properties to it's local member variables.
  * @param port_id The unique ID of the port (1-12)
  * @param port_type This variable defines if there is a direct or inderect

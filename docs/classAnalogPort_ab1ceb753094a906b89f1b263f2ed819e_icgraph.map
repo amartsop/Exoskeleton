@@ -1,6 +1,6 @@
 <map id="AnalogPort::readADC" name="AnalogPort::readADC">
 <area shape="rect" id="node1" title="Read the ADC signal." alt="" coords="497,13,656,39"/>
 <area shape="rect" id="node2" href="$classAnalogPort.html#a17fd58bad8bd2dc47e1ab5fb02845b5f" title="Read port values." alt="" coords="303,5,449,47"/>
-<area shape="rect" id="node3" href="$classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title=" " alt="" coords="104,5,255,47"/>
+<area shape="rect" id="node3" href="$classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title="Update measurements." alt="" coords="104,5,255,47"/>
 <area shape="rect" id="node4" href="$Exoskeleton_8ino.html#afe461d27b9c48d5921c00d521181f12f" title=" " alt="" coords="5,13,56,39"/>
 </map>

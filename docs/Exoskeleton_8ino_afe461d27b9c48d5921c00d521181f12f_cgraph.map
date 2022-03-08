@@ -1,10 +1,10 @@
 <map id="loop" name="loop">
 <area shape="rect" id="node1" title=" " alt="" coords="5,129,56,156"/>
-<area shape="rect" id="node2" href="$classExoHandler.html#af869d044ba80147af93ccf412817ea35" title=" " alt="" coords="131,5,317,32"/>
-<area shape="rect" id="node3" href="$classExoHandler.html#aa204e6ca2651e5635e21e483e6044d36" title=" " alt="" coords="131,57,317,98"/>
-<area shape="rect" id="node5" href="$classExoHandler.html#a6008b8b7fa5551ae141a0f4552da3f2c" title=" " alt="" coords="135,122,313,163"/>
-<area shape="rect" id="node7" href="$classExoHandler.html#a09f50d53f523e91edd02b38e34599208" title=" " alt="" coords="104,188,344,215"/>
-<area shape="rect" id="node8" href="$classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title=" " alt="" coords="149,239,299,281"/>
+<area shape="rect" id="node2" href="$classExoHandler.html#af869d044ba80147af93ccf412817ea35" title="Get the test pin." alt="" coords="131,5,317,32"/>
+<area shape="rect" id="node3" href="$classExoHandler.html#aa204e6ca2651e5635e21e483e6044d36" title="Print analog sensor value." alt="" coords="131,57,317,98"/>
+<area shape="rect" id="node5" href="$classExoHandler.html#a6008b8b7fa5551ae141a0f4552da3f2c" title="Print angle sensor value." alt="" coords="135,122,313,163"/>
+<area shape="rect" id="node7" href="$classExoHandler.html#a09f50d53f523e91edd02b38e34599208" title="Print measurements." alt="" coords="104,188,344,215"/>
+<area shape="rect" id="node8" href="$classExoHandler.html#aeac03fdee7663fd7b32bcee1ca7dc363" title="Update measurements." alt="" coords="149,239,299,281"/>
 <area shape="rect" id="node4" href="$classSensor.html#aa364c82c3e1d9f22fcd88b074bca9923" title="Returns the analog value of the sensor." alt="" coords="409,57,556,98"/>
 <area shape="rect" id="node6" href="$classSensor.html#a8e3b003dde3f95d46c009ced939414d4" title="Returns the angle value of the sensor in degrees." alt="" coords="392,131,573,157"/>
 <area shape="rect" id="node9" href="$classSensor.html#ab702f15639172984fb0937a8e2621c6a" title="Returns the ID of the port in which the sensor is connected." alt="" coords="409,185,556,212"/>

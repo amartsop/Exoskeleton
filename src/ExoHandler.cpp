@@ -1,5 +1,9 @@
 #include "../include/ExoHandler.h"
 
+/**
+ * @brief This function configures the pins for the ADCs, sets the SPI communication
+ * and setups the sensors and the analog ports.
+ */
 void ExoHandler::initialize(void)
 {
     // Intialize chip selct pins
@@ -30,7 +34,10 @@ void ExoHandler::initialize(void)
     initialize_sensors();
 }
 
-// Update measurements
+/**
+ * @brief This method updates reads the analog port values for each 
+ * port of the analog ports container and updats all the sensors.
+ */
 void ExoHandler::update_measurements(void)
 {
     // Update analog inputs 
@@ -54,7 +61,12 @@ void ExoHandler::update_measurements(void)
     }
 }
 
-// Print measurements
+/**
+ * @brief This method set's all the results to the angles array and then 
+ * prints them to the serial monitor. Calculations regarding MCP are 
+ * performed here. The printing configuration is standarlized and should not 
+ * be changed.
+ */
 void ExoHandler::print_measurements(void)
 {
     // Angle theta_i_1
@@ -116,7 +128,11 @@ void ExoHandler::print_measurements(void)
     }
 }
 
-// Print analog sensor value
+/**
+ * @brief This is debugging function. It prints the analog value of a 
+ * specific sensor.
+ * @param sensor_id That's the sensor of which we want to print the values.
+ */
 void ExoHandler::print_analog_value(int sensor_id)
 {
     float analog_val = m_sensors_container.sensor[sensor_id-1].get_analog_value();
@@ -124,7 +140,11 @@ void ExoHandler::print_analog_value(int sensor_id)
     SerialUSB.println("");
 }
 
-// Print angle sensor value
+/**
+ * @brief This is debugging function. It prints the angle value of a 
+ * specific sensor (in degrees).
+ * @param sensor_id That's the sensor of which we want to print the values.
+ */
 void ExoHandler::print_angle_value(int sensor_id)
 {
     float angle_val = m_sensors_container.sensor[sensor_id-1].get_angle_value();
@@ -132,7 +152,18 @@ void ExoHandler::print_angle_value(int sensor_id)
     SerialUSB.println("");
 }
 
-// Initialize sensors (can also be done with a json file or smth)
+/**
+ * @brief This function initializes the senors one by one. To understand 
+ * the inputs of the sensor initialization procedure, please refer 
+ * to Sensor::initialize. As you can see the arguments of the sensor.initialize 
+ * function are hardcoded. The user needs to adjust these values for 
+ * every new exoskeleton, as the minimum and maximum analog values and the 
+ * associated angles will change depending on the sensor's calibration.
+ * The function seems a bit redundant due to the
+ * "manual" initialization of each sensor. It can be done with the help of 
+ * an external file, but this means that we need to store a file inside the 
+ * microcontroller. 
+ */
 void ExoHandler::initialize_sensors(void)
 {
     // Sensor 1
@@ -190,7 +221,19 @@ void ExoHandler::initialize_sensors(void)
     m_sensors_container.sensor[17].initialize(18, m_green, 11, 1023, 4, 0, 90);
 }
 
-// Initialize analog ports
+/**
+ * @brief This function initializes the ports of the board one by 
+ * one. To understand the inputs of the analog port initialization
+ * procedure, please refer to AnalogPort::initialize.
+ * Even though the function is hardcoded, it should not change as long as the 
+ * custom board's wiring remains the same.
+ * The function seems a bit redundant due to the
+ * "manual" initialization of each port. It can be done with the help of 
+ * an external file, but this means that we need to store a file inside the 
+ * microcontroller. The arguments of the analog ports initialize functions 
+ * are based on the table below
+ *   \image html ports_mapping.png width=600px
+ */
 void ExoHandler::initialize_analog_ports(void)
 {
     // Analog port x1 
@@ -205,7 +248,7 @@ void ExoHandler::initialize_analog_ports(void)
     /* Analog port x4
     ********************** Note ***********************
     A6 and A7 must be defined for the specific chip. For now
-    know we DON'T USE it. Just give the values of x1 again. */
+    know we DON'T USE them. Just give the values of x1 again. */
     m_analog_ports_container.port[3].initialize(4, 0, (int) A0, (int) A1);
 
     // Analog port x5
