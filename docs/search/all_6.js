@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['m_5fadc_5fchip_5fselect_0',['m_adc_chip_select',['../classAnalogPort.html#a9d78cfe5df018086d7a4e02934f88de7',1,'AnalogPort']]],
+  ['m_5fadc_5fchip_5fselect_5fpin1_1',['m_adc_chip_select_pin1',['../classExoHandler.html#a1fb9028168badeb1e0adeb48e2c481ed',1,'ExoHandler']]],
+  ['m_5fadc_5fchip_5fselect_5fpin2_2',['m_adc_chip_select_pin2',['../classExoHandler.html#a92e8e8fc910b770ea08627a08b914a24',1,'ExoHandler']]],
+  ['m_5fadc_5ftest_5fpin_3',['m_adc_test_pin',['../classExoHandler.html#a2ccff621360441032be36568e10d8e97',1,'ExoHandler']]],
+  ['m_5fanalog_5fmax_4',['m_analog_max',['../classSensor.html#ad767aded91d2db80accb4135dcdb6b53',1,'Sensor']]],
+  ['m_5fanalog_5fmin_5',['m_analog_min',['../classSensor.html#a7f66acaeaa13b53d8ce852c9a2e37c41',1,'Sensor']]],
+  ['m_5fanalog_5fport_5fvalues_6',['m_analog_port_values',['../classAnalogPort.html#a8ffeeeeeacf76b772bba0629ec80efb3',1,'AnalogPort']]],
+  ['m_5fanalog_5fports_5fcontainer_7',['m_analog_ports_container',['../classExoHandler.html#a7cb1a4f445f6debc8f94bc54a3815349',1,'ExoHandler']]],
+  ['m_5fangle_5fmax_8',['m_angle_max',['../classSensor.html#a6a4246f0f8e920b98c382b15a8c5384c',1,'Sensor']]],
+  ['m_5fangle_5fmin_9',['m_angle_min',['../classSensor.html#a02e501a70ebd0c1954b21efd256f8755',1,'Sensor']]],
+  ['m_5fbaudrate_10',['m_baudrate',['../classExoHandler.html#a4ba61e9f188926f9fa0496ac0703fbbc',1,'ExoHandler']]],
+  ['m_5fgreen_11',['m_green',['../classExoHandler.html#a9b67bfabe83067e1f643036a8376acab',1,'ExoHandler']]],
+  ['m_5fgreen_5fport_12',['m_green_port',['../classAnalogPort.html#ab4e41afcc5a6c7d1c114eb6907a87ea6',1,'AnalogPort']]],
+  ['m_5fport_5fid_13',['m_port_id',['../classAnalogPort.html#a8630fa3790bb265b483025e5ffe6090f',1,'AnalogPort']]],
+  ['m_5fport_5ftype_14',['m_port_type',['../classAnalogPort.html#a5e05d4a5cca0f987d1ebd981841c969b',1,'AnalogPort']]],
+  ['m_5fred_15',['m_red',['../classExoHandler.html#a09df4bcf82794ad5ee00a54fc53880f2',1,'ExoHandler']]],
+  ['m_5fred_5fport_16',['m_red_port',['../classAnalogPort.html#a646bad8cb3488a664467becce68fb793',1,'AnalogPort']]],
+  ['m_5fsensor_5fanalog_5fvalue_17',['m_sensor_analog_value',['../classSensor.html#a0bb62db852fa2317401f0159358cd1bd',1,'Sensor']]],
+  ['m_5fsensor_5fangle_5fvalue_18',['m_sensor_angle_value',['../classSensor.html#aa65e1782c09b90652cf513b0c38af3c0',1,'Sensor']]],
+  ['m_5fsensor_5fid_19',['m_sensor_id',['../classSensor.html#a2b0d848ff7dcdb1f810f9995b7ac3057',1,'Sensor']]],
+  ['m_5fsensor_5fport_20',['m_sensor_port',['../classSensor.html#ab9323f625cbb76e30e89696397dcc1b6',1,'Sensor']]],
+  ['m_5fsensor_5ftype_21',['m_sensor_type',['../classSensor.html#a152298dfee0a15cec38b39d6924c23ff',1,'Sensor']]],
+  ['m_5fsensors_5fcontainer_22',['m_sensors_container',['../classExoHandler.html#a383ac1e08b19b82b18219e8fde221213',1,'ExoHandler']]],
+  ['m_5ftest_5fpin_23',['m_test_pin',['../classExoHandler.html#a3b833e1263fe2bcc67cfb4e4f46fbee1',1,'ExoHandler']]],
+  ['measurement_5fmode_24',['measurement_mode',['../Exoskeleton_8ino.html#a4cea6a13ea2208f511ae276209a98edf',1,'Exoskeleton.ino']]]
+];

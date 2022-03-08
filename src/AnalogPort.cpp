@@ -1,7 +1,23 @@
 #include "../include/AnalogPort.h"
 
-
 // Initialize analog port
+/**
+ * @brief This function initializes the sensor based on the configuration made
+ * by ExoHandler::initialize_analog_ports. It stores a local copy o
+ *  all the port's properties to it's local member variables.
+ * @param port_id The unique ID of the port (1-12)
+ * @param port_type This variable defines if there is a direct or inderect
+ * communication with the chip. 0: Direct communication to the chip,
+ * 1: Indirect comminication (through the ADC). Depending on the port_type 
+ * the function that is used for reading the analog values changes. 
+ * For direct communication we use Arduino's built-in analogRead(), while for
+ * indirect communication we use the method AnalogPort::readADC.
+ * @param green_port The ID of the green channel. See table below.
+ * @param red_port The ID of the red channel. See table below.
+ * For example, for Port X3 the green_port is A4 and the red_port is A5.
+ * @param adc_chip_select The chip select pin of the ADC. See AnalogPort::readADC
+ *   \image html ports_mapping.png width=600px
+ */
 void AnalogPort::initialize(int port_id, int port_type, int green_port,
   int red_port, int adc_chip_select)
 {
@@ -13,7 +29,10 @@ void AnalogPort::initialize(int port_id, int port_type, int green_port,
   m_adc_chip_select = adc_chip_select;
 }
 
-// Read port values
+/**
+ * @brief It updates the port values based on the port_type and the incoming 
+ * data.
+ */
 void AnalogPort::update_port_values(void)
 {
   // Read analog values in case of an ADC chip input (port_type=1)
@@ -38,8 +57,12 @@ void AnalogPort::update_port_values(void)
 
 }
 
-/* Function to read the ADC, accepts the channel to be read and the ADC to
-be used. */
+/**
+ * @brief This method reads the MCP3208 ADC.
+ * @param channel The channel to be read.
+ * @param adcChipSelectPin The adc chip select pin. See MCP3208 datasheet.
+ * @return int The analog value.
+ */
 int AnalogPort::readADC(int channel, int adcChipSelectPin)
 {
   /* Sets default Primary ADC Address register B00000110, This is a default

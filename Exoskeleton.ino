@@ -7,14 +7,14 @@ ExoHandler exo_handler;
 bool debug_mode = 0;
 bool measurement_mode = 0;
 
-// Start setup function:
+// Start setup function
 void setup() {
 
   // Initialize exoskeleton handler  
   exo_handler.initialize();
 } 
 
-// Start loop function:
+// Start loop function
 void loop() {
 
   // Update measurements

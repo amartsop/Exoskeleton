@@ -1,6 +1,21 @@
 #include "../include//Sensor.h"
 
-// Initialize sensor
+/**
+ * @brief This function initializes the sensor based on the configuration 
+ * made by ExoHandler::initialize_sensors. It stores a local copy of all
+ * the sensor's properties to it's local member variables.
+ * @param sensor_id The ID of the sensor.
+ * @param sensor_type The sensor type (0 for Red and 1 for Green).
+ * @param sensor_port The port in which the sensor is connected.
+ * @param analog_min The minimum analog value that the sensor reads (this 
+ * can be deducted by testing).
+ * @param analog_max The maximum analog value that the sensor reads (this 
+ * can be deducted by testing).
+ * @param angle_min The intended minimum angle that the sensor is supposed to 
+ * read in degrees.
+ * @param angle_max The intended maximum angle that the sensor is supposed to 
+ * read in degrees.
+ */
 void Sensor::initialize(int sensor_id, bool sensor_type, int sensor_port,
     float analog_min, float analog_max, float angle_min, float angle_max)
 {
@@ -26,6 +41,14 @@ void Sensor::initialize(int sensor_id, bool sensor_type, int sensor_port,
     m_angle_max = angle_max;
 }
 
+/**
+ * @brief The function updates the snesor analog and angle values based on the 
+ * incoming analog measurements and its color.The analog value is mapped to 
+ * the angle value with the help of Arduino's built-in "map" function.
+ * 
+ * @param port_values The values read at the port in which the sensor is 
+ * connected.
+ */
 void Sensor::update(const AnalogPort::AnalogPortValues& port_values)
 {
     // Get sensor value depending on its color

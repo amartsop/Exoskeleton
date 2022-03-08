@@ -1,0 +1,8 @@
+<map id="setup" name="setup">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,64,73"/>
+<area shape="rect" id="node2" href="$classExoHandler.html#a327b099600f2e8f1c322496c1b809db0" title=" " alt="" coords="112,46,273,73"/>
+<area shape="rect" id="node3" href="$classExoHandler.html#a20610c22a179089a78f204ce4911ad47" title=" " alt="" coords="321,5,483,47"/>
+<area shape="rect" id="node5" href="$classExoHandler.html#a5d6a4afed6539cdf7e3d54428e734524" title=" " alt="" coords="321,71,483,112"/>
+<area shape="rect" id="node4" href="$classAnalogPort.html#ab4a8af2c0d020c6bb2a4b635e712c7a7" title="Initialize the port object." alt="" coords="531,13,688,39"/>
+<area shape="rect" id="node6" href="$classSensor.html#a0bcdaa413cecb3545c8ba78f18edc8ca" title="Initialize sensor." alt="" coords="544,78,675,105"/>
+</map>

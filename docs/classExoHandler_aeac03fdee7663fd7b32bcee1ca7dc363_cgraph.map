@@ -1,0 +1,8 @@
+<map id="ExoHandler::update_measurements" name="ExoHandler::update_measurements">
+<area shape="rect" id="node1" title=" " alt="" coords="5,86,156,127"/>
+<area shape="rect" id="node2" href="$classSensor.html#ab702f15639172984fb0937a8e2621c6a" title="Returns the ID of the port in which the sensor is connected." alt="" coords="208,5,355,32"/>
+<area shape="rect" id="node3" href="$classAnalogPort.html#acafba20e4274ed7d2f03808860ecb282" title="Get the port values reaching the port." alt="" coords="204,57,359,98"/>
+<area shape="rect" id="node4" href="$classSensor.html#af220eddd570730fdccd3879f52ed8472" title="Update sensor." alt="" coords="222,123,341,149"/>
+<area shape="rect" id="node5" href="$classAnalogPort.html#a17fd58bad8bd2dc47e1ab5fb02845b5f" title="Read port values." alt="" coords="208,174,355,215"/>
+<area shape="rect" id="node6" href="$classAnalogPort.html#ab1ceb753094a906b89f1b263f2ed819e" title="Read the ADC signal." alt="" coords="407,181,565,208"/>
+</map>
