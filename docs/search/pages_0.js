@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['the_20largest_20heading_0',['The largest heading',['../index.html',1,'']]]
+  ['three_2dfinger_20exoskeleton_0',['Three-finger Exoskeleton',['../index.html',1,'']]]
 ];
