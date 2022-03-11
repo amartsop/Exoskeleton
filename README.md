@@ -10,7 +10,7 @@ MCP3208 analogue to digital converters (ADCs).
 For more information on the software please see the reference document 
 [reference document](https://github.com/amartsop/ExoskeletonHandover/blob/master/main.pdf), while for the full documentation 
 please visit the [API referece](https://amartsop.github.io/Exoskeleton/).
-
+<!-- 
 <div class="row">
   <div class="column2">
     <img src="images/custom_board.svg" style="width:100%">
@@ -31,4 +31,4 @@ please visit the [API referece](https://amartsop.github.io/Exoskeleton/).
   clear: both;
   display: table;
 }
-</style>
+</style> -->
