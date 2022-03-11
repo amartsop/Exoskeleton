@@ -13,10 +13,10 @@ please visit the [API referece](https://amartsop.github.io/Exoskeleton/).
 
 <div class="row">
   <div class="column2">
-    <img src="./images/custom_board.svg" style="width:100%">
+    <img src="images/custom_board.svg" style="width:100%">
   </div>
   <div class="column2">
-    <img src="./images/melexis_board.svg" style="width:100%">
+    <img src="images/melexis_board.svg" style="width:100%">
   </div>
 </div>
 
