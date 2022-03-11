@@ -12,3 +12,28 @@ are the sent from the ports to the 8 built-in analog pins of the microcontroller
 of the MCP3208. The mapping of the ports to the analog pins of the board or the ADCs is explained
 
 <!-- ![This is the caption\label{mylabel}](./images/custom_board.svg) -->
+
+<div class="row">
+  <div class="column2">
+    <img src="./images/custom_board.svg" style="width:100%">
+  </div>
+  <div class="column2">
+    <img src="./images/custom_board.svg" style="width:100%">
+  </div>
+</div>
+
+<style>
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column2{
+  float: left;
+  width: 50.0%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
