@@ -18,7 +18,7 @@ of the MCP3208. The mapping of the ports to the analog pins of the board or the 
     <img src="./images/custom_board.svg" style="width:100%">
   </div>
   <div class="column2">
-    <img src="./images/custom_board.svg" style="width:100%">
+    <img src="./images/melexis_board.svg" style="width:100%">
   </div>
 </div>
 
